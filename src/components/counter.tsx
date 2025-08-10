@@ -15,7 +15,7 @@ export const Counter = () => {
     return (
         <>
             <p>Count: {count}</p>
-            <button onClick={() => setCount(count+1)}>Increment</button>
+            <button className="py-1 px-2 text-sm border border-neutral-300 dark:border-neutral-500 text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-700 rounded" onClick={() => setCount(count+1)}>Increment</button>
         </>
     )
 }
