@@ -14,16 +14,20 @@ export const Navigation = () => {
                     <div className="flex items-center gap-6">
                         <SignedOut>
                             <SignInButton>
-                                <button className="py-1 px-2 text-sm border border-neutral-300 dark:border-neutral-500 dark:text-neutral-200 dark:hover:bg-neutral-700">Sign in</button>
+                                <button className="cursor-pointer py-1 px-2 text-sm border border-neutral-300 dark:border-neutral-500 text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-700 rounded">
+                                    Sign in
+                                </button>
                             </SignInButton>
                             <SignUpButton>
-                                <button className="py-1 px-2 text-sm border border-neutral-300 dark:border-neutral-500 dark:text-neutral-200 dark:hover:bg-neutral-700">Sign up</button>
+                                <button className="cursor-pointer py-1 px-2 text-sm border border-neutral-300 dark:border-neutral-500 text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-700 rounded">Sign up</button>
                             </SignUpButton>
                         </SignedOut>
                         {/* <UserButton /> */}
                         <SignedIn>
                             <Link href="/user-profile">Profile</Link>
-                            <SignOutButton />
+                            <SignOutButton>
+                                <button className="cursor-pointer py-1 px-2 text-sm border border-neutral-300 dark:border-neutral-500 text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-700 rounded">Sign out</button>
+                            </SignOutButton>
                         </SignedIn>
                     </div>
                 </div>
